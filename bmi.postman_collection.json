@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "ea7c6912-85f1-4159-a05a-a6461756e7a6",
+		"name": "bmi-cal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32267453"
+	},
+	"item": [
+		{
+			"name": "add and calculate bmi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/bmi?age=50&weight=67&gender=female&height=120",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"bmi"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "50"
+						},
+						{
+							"key": "weight",
+							"value": "67"
+						},
+						{
+							"key": "gender",
+							"value": "female"
+						},
+						{
+							"key": "height",
+							"value": "120"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get list of bmi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/bmi/list",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"bmi",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get bmi by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/bmi/?id=2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"bmi",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
